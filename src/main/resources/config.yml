@@ -1,0 +1,46 @@
+enabled: true
+
+# Potion names:
+#SPEED
+#SLOW
+#FAST_DIGGING
+#SLOW_DIGGING
+#INCREASE_DAMAGE
+#HEAL
+#HARM
+#JUMP
+#CONFUSION
+#REGENERATION
+#DAMAGE_RESISTANCE
+#FIRE_RESISTANCE
+#WATER_BREATHING
+#INVISIBILITY
+#BLINDNESS
+#NIGHT_VISION
+#HUNGER
+#WEAKNESS
+#POISON
+#WITHER
+#HEALTH_BOOST
+#ABSORPTION
+#SATURATION
+
+# The replacement is non mandatory. If it is not set, or left empty, the potion will simply disappear on consumption / click.
+
+forbidden_potions:
+    - strength:
+        # Brewing a normal strength potion is forbidden.
+        normal: true
+        # Brewing an enhanced strength potion (glowstone) is forbidden.
+        increase_potency: true
+        # Brewing a duration enhanced strength potion (redstone) is forbidden.
+        increase_duration: true
+        # Brewing a splash strength potion (redstone) is forbidden.
+        make_splash: true
+        # Replaces the item upon consumption
+        replaceInInventory: true
+        # Stops the recipe from working in a brewing stand.
+        stopBrewing: true
+        # if this is left empty, the potion will be replaced by air.
+        replacement: REGEN
+        

@@ -1,0 +1,6 @@
+name: Potiontato
+version: 0.1a
+description: Provides a plugin that converts and disables potions.
+author: psygate
+main: com.psygate.potiontato.Potiontato
+database: false
